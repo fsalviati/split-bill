@@ -1,0 +1,244 @@
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 48px;
+  letter-spacing: 1.2px;
+}
+
+.header p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.friend-list-container,
+.split-box-main-container {
+  border: 3px solid rgb(240, 160, 155);
+  margin-top: 2%;
+  margin-bottom: 8%;
+  padding: 16px;
+  background-color: rgb(252, 250, 241);
+  border-radius: 2px;
+}
+
+/* Friend List Section */
+
+.friend-list-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.friend-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px 14px;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.friend-box:hover {
+  background-color: blanchedalmond;
+}
+
+.friend-box img {
+  width: 78px;
+  border-radius: 50%;
+}
+
+.add-friend-btn,
+.friend-box button,
+.split-bill-btn {
+  width: 100px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: orange;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.add-friend-btn:hover,
+.friend-box button:hover,
+.split-bill-btn:hover {
+  background-color: rgb(251, 176, 35);
+}
+.add-friend-btn {
+  width: 125px;
+}
+
+.friend-box-container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 14px;
+}
+
+.friend-box-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0px 18px;
+}
+
+.friend-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.friend-description {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.add-friend-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 16px;
+}
+
+.add-friend-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: end;
+  padding: 16px;
+  margin-top: 22px;
+  background-color: blanchedalmond;
+}
+
+.add-friend-container label {
+  margin-right: 10px;
+}
+
+.add-friend-inputs {
+  width: 60%;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.bill-friend-inputs,
+.add-friend-inputs {
+  font-weight: 600;
+}
+
+.add-friend-general {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.add-friend-close-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+.iconFriend {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.add-friend-error-message {
+  margin: 8px 0px;
+  color: red;
+  font-weight: 500;
+}
+
+.name-friend-picked {
+  color: rgb(242, 65, 53);
+}
+/* Friend List Section END */
+
+/* Split Box Section */
+
+.split-box-main-container {
+  min-width: 25%;
+  padding: 30px;
+  background-color: blanchedalmond;
+}
+
+.split-box-main-container header {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.bill-friend-inputs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-bill-general {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  height: 30px;
+}
+
+.add-bill-general input,
+.add-bill-general select,
+.add-bill-general label {
+  border: none;
+  border-radius: 4px;
+  height: 90%;
+  width: 60%;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.add-bill-general input,
+.add-bill-general select {
+  text-align: center;
+  width: 40%;
+}
+
+.split-bill-btn-container {
+  margin-top: 26px;
+  float: right;
+}
+
+#friend-expense:disabled {
+  background-color: rgb(234, 234, 229);
+}
+
+.owe-0 {
+  color: black;
+}
+.owe-1 {
+  color: green;
+}
+.owe-2 {
+  color: red;
+}
+
+/* Split Box Section END */

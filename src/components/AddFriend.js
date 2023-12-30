@@ -5,7 +5,7 @@ function AddFriend({
   setFriendsListSplit,
   friendsListSplit,
 }) {
-  const initialFriendImage = "https://i.pravatar.cc/150?img=";
+  const initialFriendImage = "https://i.pravatar.cc/150?img=65";
   const [friendName, setFriendName] = useState("");
   const [friendImage, setFriendImage] = useState(initialFriendImage);
   const [showErrorMessage, setShowErrorMessage] = useState(false);

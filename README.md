@@ -6,4 +6,3 @@
 
 ## Application developed using the following:
 * React.JS
-
